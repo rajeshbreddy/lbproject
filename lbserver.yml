@@ -1,0 +1,9 @@
+---
+- name: intsalling hproxy
+  hosts: all
+  become: yes
+  tasks:
+     - name: installing 
+       yum:
+         name: haproxy
+         state: latest
